@@ -4,12 +4,13 @@ $(document).ready(function(){
 	'uploads/slider/33.jpg','uploads/slider/44.jpg','uploads/slider/55.jpg'];
 
 	var mainContent = ['Всероссийское совещание руководителей системы ДПО',
-	'Всероссийский семинар - совещание "Система оценки качества образования:проблемы и пути решения'
-,'Семинар для руководителей общеобразовательных организаций-членов Ассоциации директоров ЧР',
-'Семинар по вопросам проектирования современного урока и его анализа',
-'Семинар на тему «Методика формирования деятельностных уроков истории и обществознания»'];
+	'Всероссийский семинар - совещание "Система оценки качества образования:проблемы и пути решения',
+	'Семинар для руководителей общеобразовательных организаций-членов Ассоциации директоров ЧР',
+	'Семинар по вопросам проектирования современного урока и его анализа',
+	'Семинар на тему «Методика формирования деятельностных уроков истории и обществознания»'];
 
 	var index = 0;
+
 
 	for (var i = 0; i < imageCollection.length; i++) {
 		$('.dot-content').append('<div class="dot"></div>');
@@ -23,13 +24,23 @@ $(document).ready(function(){
 		var dots = document.getElementsByClassName('dot');
 
 		for(var i = index; i < dots.length; i++) {
+
 			$('.dot').eq(index).addClass('active');
 			$('.dot').eq(index-1).removeClass('active');
 		}
 
+
+		for(var a = 0; a < mainContent.length; a++) {
+
+			$('.slider-header').html('<h1>'+mainContent[index]+'</h1>');
+		}
+
+		
+
 		$('.slide-main-content').css({
 		'background-image':'url('+imageCollection[index]+')'
 		});
+		
 
 		index ++;
 
@@ -37,7 +48,7 @@ $(document).ready(function(){
 			index = 0;
 		}
 
-	},3000)
+	},4000)
 
 	
 });
