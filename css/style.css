@@ -147,6 +147,8 @@ button.navbar-toggle:focus {
  	display: inline-block;
 }
 
+
+
 .dropdown-menu {
 	position: absolute;
     top: 100%;
@@ -250,7 +252,7 @@ button.navbar-toggle:focus {
 
 
 .slide-main-content {
-	background-image: url(../uploads/slider/11.jpg);
+
 	height:500px;
 	background-size: cover;
 	opacity: 1;
@@ -258,6 +260,7 @@ button.navbar-toggle:focus {
   	-moz-transition: all 0.8s ease-in-out;
   	-o-transition: all 0.8s ease-in-out;
  	transition: all 0.8s ease-in-out;
+	 
 
 }
 
@@ -288,6 +291,10 @@ button.navbar-toggle:focus {
 .dot.active {
 
   background-color:#d38907;
+  -webkit-transition: all 0.8s ease-in-out;
+  	-moz-transition: all 0.8s ease-in-out;
+  	-o-transition: all 0.8s ease-in-out;
+ 	transition: all 0.8s ease-in-out;
   
 }
 
@@ -296,6 +303,7 @@ button.navbar-toggle:focus {
 	position: relative;
 	max-width: 1330px;
 	margin: 0 auto;
+
 }
 
 
@@ -306,6 +314,7 @@ button.navbar-toggle:focus {
 	background-color: rgba(0,0,0,0.55);
     max-width: 40%;
     padding: 40px;
+
 }
 
 .slider-header h1 {
@@ -314,6 +323,11 @@ button.navbar-toggle:focus {
 	font-weight: 700;
 	font-size: 24px;
 	color: white;
+	opacity: 1;
+	-webkit-transition: all 0.8s ease-in-out;
+  	-moz-transition: all 0.8s ease-in-out;
+  	-o-transition: all 0.8s ease-in-out;
+ 	transition: all 0.8s ease-in-out;
 }
 
 
@@ -567,6 +581,40 @@ span.date {
 
 .video__item {
 	max-width: 47%;
+	position: relative;
+}
+
+.play-box {
+	position: absolute;
+	width: 20%;
+	height: 15%;
+	border: 3px solid white;
+	top: 20%;
+	left: 40%;
+}
+
+.play-btn {
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	border:10px solid transparent;
+	border-left-color: white;
+}
+
+.play-box:hover {
+	background-color: white;
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+ 	transition: all 0.3s ease-in-out;
+}
+
+.play-box:hover .play-btn {
+	border-left-color: grey;
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+ 	transition: all 0.3s ease-in-out;
 }
 
 /*LOAD NEWS BUTTON*/
