@@ -118,6 +118,7 @@ button.navbar-toggle:focus {
 
 .navbar__top ul {
 	padding: 0;
+	height: 100%;
 }
 
 .navbar__top ul li {
@@ -137,6 +138,7 @@ button.navbar-toggle:focus {
     text-decoration: none;
 }
 
+
 .carent {
 	width: 0;
 	height: 0;
@@ -151,14 +153,19 @@ button.navbar-toggle:focus {
 
 .dropdown-menu {
 	position: absolute;
-    top: 100%;
     left: 0;
     z-index: 1000;
     display: none;
     min-width: 100%;
-    padding: 5px 0;
+    min-height: 80px;
+    padding: 35px 0;
     list-style: none;
     background: #3d477f;
+}
+
+
+li.dropdown {
+	height: 100%;
 }
 
 .dropdown-menu div.table {
