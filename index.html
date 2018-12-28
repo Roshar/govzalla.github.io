@@ -5,9 +5,12 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<meta name="viewport" content="initial-scale=1.0, width=device-width">
-		<title>Govzalla</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
 	</head>
+
+		<title>Govzalla</title>
 <body>
 	<!--HEADER CONTENT-->
 	<div class="container">
@@ -17,7 +20,7 @@
 			</div>
 			<div class="header__sidebar">
 				<div class="menu-button">
-					<button type="button" class="navbar-toggle" onclick="myFunction(this)">
+					<button type="button" class="navbar-toggle" >
 							<span class="icon-menu-btn one-anim"></span>
 							<span class="icon-menu-btn two-anim"></span>
 							<span class="icon-menu-btn three-anim"></span>
@@ -28,8 +31,18 @@
 		</div>
 		<div class="navbar-container">
 			<div class="navbar">
+				<div class="navbar__search">
+					<form action="#" class="form-search">
+						<div class="form-group">
+							<input type="text" class="input-search" placeholder="Поиск...">
+						<button type="submit" class="btn btn-search fa fa-search">
+							<i class="icon-search"></i>
+						</button>
+						</div>
+					</form>
+				</div>
 				<div class="navbar__top">
-					<ul class="ul">
+					<ul>
 						<li class="dropdown">
 							<a href="#">Институт <span class="carent"></span></a>
 						<div class="dropdown-menu">
@@ -55,18 +68,10 @@
 						<li><a href="">Элетронная библиотека</a></li>
 					</ul>
 				</div>
-				<div class="navbar__search">
-					<form action="#" class="form-search">
-						<div class="form-group">
-							<input type="text" class="input-search" placeholder="Поиск...">
-						<button type="submit" class="btn btn-search fa fa-search">
-							<i class="icon-search"></i>
-						</button>
-						</div>
-					</form>
-				</div>
+				
 			</div>
 		</div>
+		
 	</div>
 	<div class="container slide-main-content">
 			<div class="slide__wrap">
@@ -115,20 +120,20 @@
 				</div>
 				<div class="post">
 					<div class="post__item">
-					<div class="post__content">
-						<div class="post__date">27.11.2018</div>
-						<a href="" class="h1post">Совещание со специалистами ММС республики</a>
+						<div class="post__content">
+							<div class="post__date">27.11.2018</div>
+							<a href="" class="h1post">Совещание со специалистами ММС республики</a>
+						</div>
+						<div class="post__img">
+							<img src="uploads/posts/11.jpg" alt="">
+						</div>
+						<div class="post__content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores possimus aperiam cupiditate, est labore voluptates blanditiis quasi, nulla, dolor sit consequuntur aliquam ullam molestiae quas obcaecati in iusto! Est, animi?
+							</p>
+							<a href="#" class="post__more"> Побробнее..</a>
+						</div>
 					</div>
-					<div class="post__img">
-						<img src="uploads/posts/11.jpg" alt="">
-					</div>
-					<div class="post__content">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores possimus aperiam cupiditate, est labore voluptates blanditiis quasi, nulla, dolor sit consequuntur aliquam ullam molestiae quas obcaecati in iusto! Est, animi?
-						</p>
-						<a href="#" class="post__more"> Побробнее..</a>
-					</div>
-				</div>
 				<div class="post__item">
 					<div class="post__content">
 						<div class="post__date">27.11.2018</div>
@@ -159,7 +164,67 @@
 						<a href="#" class="post__more"> Побробнее..</a>
 					</div>
 				</div>
-					<div class="post__item">
+				<div class="post__item">
+					<div class="post__content">
+						<div class="post__date">27.11.2018</div>
+						<a href="" class="h1post">Межрегиональный брейн-ринг по естественнонаучным предметам</a>
+					</div>
+					<div class="post__img">
+						<img src="uploads/posts/11.jpg" alt="">
+					</div>
+					<div class="post__content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores possimus aperiam cupiditate, est labore voluptates blanditiis quasi, nulla, dolor sit consequuntur aliquam ullam molestiae quas obcaecati in iusto! Est, animi?
+						</p>
+						<a href="#" class="post__more"> Побробнее..</a>
+					</div>
+				</div>
+				<div class="post__item">
+					<div class="post__content">
+						<div class="post__date">27.11.2018</div>
+						<a href="" class="h1post">Межрегиональный брейн-ринг по естественнонаучным предметам</a>
+					</div>
+					<div class="post__img">
+						<img src="uploads/posts/11.jpg" alt="">
+					</div>
+					<div class="post__content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores possimus aperiam cupiditate, est labore voluptates blanditiis quasi, nulla, dolor sit consequuntur aliquam ullam molestiae quas obcaecati in iusto! Est, animi?
+						</p>
+						<a href="#" class="post__more"> Побробнее..</a>
+					</div>
+				</div>
+				<div class="post__item">
+					<div class="post__content">
+						<div class="post__date">27.11.2018</div>
+						<a href="" class="h1post">Межрегиональный брейн-ринг по естественнонаучным предметам</a>
+					</div>
+					<div class="post__img">
+						<img src="uploads/posts/11.jpg" alt="">
+					</div>
+					<div class="post__content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores possimus aperiam cupiditate, est labore voluptates blanditiis quasi, nulla, dolor sit consequuntur aliquam ullam molestiae quas obcaecati in iusto! Est, animi?
+						</p>
+						<a href="#" class="post__more"> Побробнее..</a>
+					</div>
+				</div>
+				<div class="post__item">
+					<div class="post__content">
+						<div class="post__date">27.11.2018</div>
+						<a href="" class="h1post">Межрегиональный брейн-ринг по естественнонаучным предметам</a>
+					</div>
+					<div class="post__img">
+						<img src="uploads/posts/11.jpg" alt="">
+					</div>
+					<div class="post__content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores possimus aperiam cupiditate, est labore voluptates blanditiis quasi, nulla, dolor sit consequuntur aliquam ullam molestiae quas obcaecati in iusto! Est, animi?
+						</p>
+						<a href="#" class="post__more"> Побробнее..</a>
+					</div>
+				</div>
+				<div class="post__item">
 					<div class="post__content">
 						<div class="post__date">27.11.2018</div>
 						<a href="" class="h1post">Межрегиональный брейн-ринг по естественнонаучным предметам</a>
@@ -341,14 +406,45 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+				    $(document).ready(function(){
+				    	var mql = window.matchMedia('all and (max-width: 768px)');
+				    	var mqlBig = window.matchMedia('all and (min-width: 768px)');
+				    	
+						$('.dropdown').on('click',function(){
+							if (mql.matches) {
+
+								$(this).children('.dropdown-menu').stop(false,true).slideToggle(300);
+								
+							}
+						})
+
+						$('.dropdown').hover(function(){
+							if(mqlBig.matches) {
+								$(this).children('.dropdown-menu').stop(true, false, true).fadeToggle(400);
+							}
+						})
+
+						$('.navbar-toggle').on('click',function(){
+							$(this).toggleClass('change');
+							$('.navbar').slideToggle();
+						})
+
+						$(window).resize(function(){
+							if($(window).width() > 768) {
+								$('.navbar').removeAttr('style')
+							}
+						})
+
+ 		 			})
+ 		 			
+		</script>
+
+
 	<script src="js/mado.js"></script>
-	<script src="js/menu.js"></script>
+	<script src="js/news-load.js"></script>
 	<script>
-		// function for toggle btn navbar 
-		function myFunction(x) {
- 		 x.classList.toggle("change");
-}
+
 	</script>
 </body>
 </html>
