@@ -292,6 +292,7 @@ TOP MAIN MENU
     border: 1px solid #bbb;
     display: inline-block;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .dot.active {
